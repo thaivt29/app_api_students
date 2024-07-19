@@ -1,0 +1,30 @@
+1. API của Student 
+    /student                     (GET)      (Lấy ra tất cả Student trong DB)
+    /student/<int:id>            (GET)      (Lấy Student theo id trong DB)
+    /insert/student              (POST)     (ADD Student vào DB)
+    /update/student/<int:id>     (PUT)      (Update Student theo id)
+    /delete/student/<int:id>     (DELETE)   (Delete Student theo id)
+    /student/score/<int:id>      (GET)      (Lấy ra tất cả điểm của 1 Student theo id)
+
+2. API của Teacher
+    /teacher                           (GET)      (Lấy ra tất cả Teacher trong DB)
+    /teacher/<int:id>                  (GET)      (Lấy Teacher theo id trong DB)
+    /insert/teacher                    (POST)     (ADD Teacher vào DB)
+    /update/teacher/<int:id>           (PUT)      (Update Teacher theo id)
+    /delete/teacher/<int:id>           (DELETE)   (Delete Teacher theo id)
+    /teacher/subject/<string:name>     (GET)      (Lấy ra tất cả các Subject của 1 Teacher đó dạy theo Name)
+
+3. API của Subject
+    /subject                       (GET)      (Lấy ra tất cả Subject trong DB)
+    /subject/<string:id>           (GET)      (Lấy Subject theo id trong DB)
+    /insert/subject                (POST)     (ADD Subject vào DB)
+    /update/subject/<string:id>    (PUT)      (Update Subject theo id)
+    /delete/subject/<string:id>    (DELETE)   (Delete Subject theo id)
+    /subject/score/<string:id>     (GET)      (Lấy ra tất cả các Điểm 1 Subject đó theo id)
+
+4. API của Score
+    /score                               (GET)      (Lấy ra tất cả Score trong DB)
+    /score/<int:ma_hs>/<string:ma_mh>    (GET)      (Lấy Score theo Ma_HS và Ma_MH trong DB)
+    /insert/score                        (POST)     (ADD Score vào DB)   
+    /update/score/<int:id>               (PUT)      (Update Score theo Ma_HS và Ma_MH)
+    /delete/score/<int:id>               (DELETE)   (Delete Score theo Ma_HS và Ma_MH)
